@@ -185,19 +185,23 @@ See `config/config.example.yml` for descriptions and examples for each config ke
 ##### Run Arweave Blockchain
 
 ```sh
-$ docker pull rootmos/loom
-$ docker run --rm --publish 8000:8000 rootmos/loom
+npx arlocal 8000
 ```
 
 ### Create Arweave Key
-Install arweave-deploy
+<!-- this is no longer maintained. should we use gui client to generate? -->
+<!-- Install arweave-deploy
 https://docs.arweave.org/developers/tools/arweave-deploy
 
 Generate arweave key:
 
 ```sh
 $ arweave key-create your-arweave-key.json
-```
+``` -->
+Visit arweave wallet app
+https://arweave.app/add
+
+Create a new wallet and download the key file
 
 1. Copy the generated key to /config directory.
 2. Update the `config/config.yml` file `AREWAVE_KEY_FILE` to be the name of this file.
